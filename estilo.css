@@ -1,0 +1,72 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:100;
+    
+}
+/* Galeria fachera, q cuando le pase el click por arriba el click
+se agrande la imagen. */
+
+h1 {
+    text-align: center;
+    font-size:3rem;
+    padding: 5px 5px;
+}
+
+.container {
+    padding:10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "img1 img2 img2 img3"
+    "img1 img2 img2 img3"
+    "img4 img5 img6 img6"
+    "img4 img5 img6 img6"
+    "img9 img9 img7 img8"
+    "img9 img9 img7 img8"
+    "img10 img10 img7 img8";
+    margin:auto;                                              
+    gap:10px;
+    grid-auto-rows: 160px;
+    position:relative;
+    overflow: hidden;
+}
+
+.gallery__img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.gallery__img:first-child{
+    grid-area:img1;
+}
+.gallery__img:nth-child(2){
+    grid-area:img2;
+}
+.gallery__img:nth-child(3){
+    grid-area:img3;
+}
+.gallery__img:nth-child(4){
+    grid-area:img4;
+}
+.gallery__img:nth-child(5){
+    grid-area:img5;
+}
+.gallery__img:nth-child(6){
+    grid-area:img6;
+}
+.gallery__img:nth-child(7){
+    grid-area:img7;
+}
+.gallery__img:nth-child(8){
+    grid-area:img8;
+}
+.gallery__img:nth-child(9){
+    grid-area:img9;
+}
+.gallery__img:nth-child(10){
+    grid-area:img10;
+}
+
+
+
